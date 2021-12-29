@@ -1,5 +1,9 @@
 import React from 'react'
 
-export default function Board() {
-  return <div></div>
+export default function Board({Board}) {
+  return <div className="board">
+    {board.map((piece, i) => {
+      <div key={id}></div>
+    })}
+  </div>
 }
