@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Board({Board}) {
+export default function Board({board}) {
   return <div className="board">
-    {board.map((piece, i) => {
-      <div key={id}></div>
-    })}
+    {board.map((piece, i) => (
+      <div key={i}>
+        <p>{JSON.stringify(piece)}</p>
+      </div>
+    ))}
   </div>
 }
