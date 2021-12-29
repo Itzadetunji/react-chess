@@ -1,7 +1,10 @@
 import * as Chess from 'chess.js'
-import {Be} from 'rxjs'
+import {BehaviorSubject} from 'rxjs'
 
 const chess = new Chess ()
 
+export const gameSubject =new BehaviorSubject({
+  board: chess.board()
+})
 
 chess.board()
