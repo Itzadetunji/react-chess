@@ -2,14 +2,14 @@ import React from 'react'
 import Square from './Square'
 import Piece from './Piece'
 import {useDrop} from 'react-dnd'
-import {move} from './Game'
+import {handleMove} from './Game'
 
 export default function BoardSquare({piece, black, position}) {
   const [, drop] = useDrop({
     accept: 'piece',
     drop: (item) => {
       const [fromPosition] = item.id.split('_')
-      move(fromPosition, position)
+      handleMove(fromPosition, position)
     },
   })
   return (
