@@ -1,6 +1,8 @@
 import React from 'react'
+import Square from './Square'
+import {move} from './Game'
 
-const promotionPieces = ['r', 'n', 'b', 'q']
+const promotionPieces = ['r', 'n', 'b', 'q'];
 
 export default function Promote({
   promotion: {from,to,color},
@@ -10,7 +12,11 @@ export default function Promote({
     <div className="board">
       {promotionPieces.map((p, i) => (
         <div key={i} className="promote-square">
-          {p}
+          <Square black={i % 3 === 0}>
+            <div className="piece-container" onClick={() => move(from, to, p)}>
+              <img src={require(`./assets/${p}_${color}.png`)} alt="" className="piece cursor-pointer"/>
+            </div>
+          </Square>
         </div>
       ))}
     </div>

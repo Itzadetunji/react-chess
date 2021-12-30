@@ -47,6 +47,9 @@
   height: 100%;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
 
 .piece-container {
   cursor: grab;
