@@ -6,7 +6,7 @@ export default function BoardSquare({piece}) {
   return (
     <div>
       <Square>
-        <Piece piece={piece}/>
+        {piece && <Piece piece={piece}/> }
       </Square>
     </div>
   )
