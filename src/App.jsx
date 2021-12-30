@@ -12,7 +12,7 @@ function App() {
     return () => subscribe.unsubscribe()
   }, [])
   return <div className="container">
-    <div class="board-container">
+    <div className="board-container">
       <Board board={board}/>
     </div>
   </div>
