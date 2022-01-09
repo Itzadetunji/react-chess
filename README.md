@@ -4,5 +4,6 @@ Clone the repo by running `git clone https://github.com/Itzadetunji/react-chess.
 
 ## Run `npm start` in your terminal in the root directory of the cloned app
 Open [http://localhost:3000](http://localhost:3000) to view the game in your browser
+Grab a friend and play together  
 
-# Have fun trying to win the game 😅
+# Have fun playing the game 😅
